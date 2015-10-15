@@ -15,13 +15,13 @@ docker pull rabbitmq:3-management
 docker run -d  --hostname local_rabbitmq --name local_rabbitmq -p 15672:15672 -p 15674:15674 -p 5672:5672 rabbitmq:3-management
 ```
 
-#### How to run
-1. Run iPython notebook
+#### How to use
+I Run iPython notebook
 ```sh
 . ./.mqEnv/bin/activate
 ./.mqEnv/bin/ipython notebook notebooks # it will automatically open browser with notebooks.
  ```
-2. Visit RabbitMQ managment site `http://DOCKER_IP:15672/` to check how MQ works.
+II Visit RabbitMQ managment site `http://DOCKER_IP:15672/` to check how MQ works.
 
 To get docker ip run `docker-machine ip default`
 
